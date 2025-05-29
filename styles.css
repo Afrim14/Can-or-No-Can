@@ -1,0 +1,162 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(240, 10%, 5%);
+  color: hsl(0, 0%, 90%);
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Title */
+h1 {
+  font-size: 2.4rem;
+  color: hsl(180, 100%, 50%);
+  text-shadow: 0 0 15px hsl(180, 100%, 50%);
+  margin-bottom: 40px;
+}
+
+/* Robot wrapper */
+.robot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Head */
+.robot-head {
+  width: 100px;
+  height: 100px;
+  background: transparent;
+  border: 3px solid hsl(180, 100%, 50%);
+  border-radius: 50%;
+  box-shadow: 0 0 15px hsl(180, 100%, 50%);
+  position: relative;
+  margin-bottom: 20px;
+}
+.robot-head::before,
+.robot-head::after {
+  content: '';
+  position: absolute;
+  top: 35%;
+  width: 15px;
+  height: 15px;
+  background: hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+.robot-head::before {
+  left: 25%;
+}
+.robot-head::after {
+  right: 25%;
+}
+
+/* Arms */
+.robot-arms {
+  display: flex;
+  justify-content: space-between;
+  width: 220px;
+  margin-bottom: 10px;
+}
+.left-arm,
+.right-arm {
+  width: 20px;
+  height: 80px;
+  background: transparent;
+  border: 3px solid hsl(330, 100%, 60%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px hsl(330, 100%, 60%);
+}
+
+/* Torso */
+.robot-torso {
+  background: transparent;
+  border: 3px solid hsl(180, 100%, 50%);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px hsl(180, 100%, 50%);
+}
+
+/* Cases */
+.case-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 25px;
+  justify-content: center;
+}
+.case {
+  background: transparent;
+  border: 2px solid hsl(50, 100%, 60%);
+  color: hsl(50, 100%, 60%);
+  padding: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 0 0 10px hsl(50, 100%, 60%);
+  transition: all 0.3s ease;
+}
+.case:hover {
+  box-shadow: 0 0 20px hsl(50, 100%, 60%);
+}
+
+/* Legs */
+.robot-legs {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-top: 20px;
+}
+.left-leg,
+.right-leg {
+  width: 20px;
+  height: 60px;
+  background: transparent;
+  border: 3px solid hsl(50, 100%, 60%);
+  border-radius: 5px;
+  box-shadow: 0 0 10px hsl(50, 100%, 60%);
+}
+
+/* Dealer section */
+.dealer-box {
+  background: transparent;
+  border: 3px solid hsl(330, 100%, 60%);
+  border-radius: 10px;
+  padding: 20px;
+  width: 60%;
+  margin: 20px auto;
+  box-shadow: 0 0 10px hsl(330, 100%, 60%);
+  color: hsl(330, 100%, 60%);
+}
+#deal-button,
+#no-deal-button {
+  background: transparent;
+  border: 2px solid hsl(330, 100%, 60%);
+  color: hsl(330, 100%, 60%);
+  padding: 10px 25px;
+  font-size: 1.1rem;
+  border-radius: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  box-shadow: 0 0 8px hsl(330, 100%, 60%);
+}
+#deal-button:hover,
+#no-deal-button:hover {
+  box-shadow: 0 0 16px hsl(330, 100%, 60%);
+}
+
+/* Score section */
+.score-container {
+  background: transparent;
+  border: 3px solid hsl(180, 100%, 50%);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 40px;
+  box-shadow: 0 0 15px hsl(180, 100%, 50%);
+  color: hsl(0, 0%, 90%);
+}

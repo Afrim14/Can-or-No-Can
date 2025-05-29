@@ -1,42 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title> Can or no Can </title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Can or No Can</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <h1> ⚡ Welcome to Can or No Can ⚡</h1>
+  <h1>⚡ Welcome to Can or No Can ⚡</h1>
 
-<!-- Cases section-->>
-    <div class="case-container"> 
-        <div class="case"> 1 </div>
-        <div class="case"> 2 </div>
-        <div class="case"> 3 </div>
-        <div class="case"> 4 </div>
-        <div class="case"> 5 </div>
-        <div class="case"> 6 </div>
+  <!-- 🤖 Robot Structure -->
+  <div class="robot">
+    
+    <!-- Head -->
+    <div class="robot-head"></div>
+
+    <!-- Arms -->
+    <div class="robot-arms">
+      <div class="left-arm"></div>
+      <div class="right-arm"></div>
     </div>
 
-<!--Banker/Dealer Offer section-->>
-   <div class="dealer-section"> 
+    <!-- Torso with Cases -->
+    <div class="robot-torso">
+      <div class="case-container"> 
+        <div class="case">1</div>
+        <div class="case">2</div>
+        <div class="case">3</div>
+        <div class="case">4</div>
+        <div class="case">5</div>
+        <div class="case">6</div>
+      </div>
+    </div>
+
+    <!-- Legs -->
+    <div class="robot-legs">
+      <div class="left-leg"></div>
+      <div class="right-leg"></div>
+    </div>
+  </div>
+
+  <!-- 💬 Dealer Section -->
+  <div class="dealer-section"> 
     <div class="dealer-box" id="dealer-box">
-        <!--Banker message-->
+      <!-- Banker message appears here -->
     </div>
+    <button id="deal-button">Deal</button>
+    <button id="no-deal-button">NO DEAL</button>
+  </div>
 
-    <button id="deal-button"> Deal </button>
-    <button id="no-deal-button"> NO DEAL </button>
-    </div>
+  <!-- 🏆 Score Section -->
+  <div class="score-container" id="score-container">
+    <!-- Final result comes here -->
+  </div>
 
-
-    <div class="score-container" id="score-container">
-        <!--final result comes here-->>
-    </div>
-
-
-
-
-      <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
